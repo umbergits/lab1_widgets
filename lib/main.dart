@@ -75,6 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
+
     return Scaffold(
       appBar: AppBar(
         // TRY THIS: Try changing the color here to a specific color (to
@@ -109,6 +110,16 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            Text(
+              'Keep Tapping',
+              style: TextStyle(
+                fontSize: 18,
+                fontStyle: FontStyle.italic,
+                color: Colors.grey,
+              ),
+            ),
+            const SizedBox(width: 8),
+            const Icon(Icons.star, color: Colors.amber),
           ],
         ),
       ),
